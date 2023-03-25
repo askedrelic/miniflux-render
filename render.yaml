@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: miniflux
+    env: docker
+    repo: https://github.com/askedrelic/miniflux-render.git
+    region: oregon
+    plan: free
+    branch: main
+    numInstances: 1
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: miniflux-db
+          property: connectionString
+      - key: CREATE_ADMIN
+        value: 1
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        value: password # OR generateValue: true
+
+databases:
+  - name: miniflux-db
+    plan: free
+    databaseName: miniflux
+    user: miniflux
+    ipAllowList: []
