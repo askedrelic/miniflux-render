@@ -7,6 +7,7 @@ services:
     plan: free
     branch: main
     numInstances: 1
+    # https://miniflux.app/docs/configuration.html
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -20,6 +21,10 @@ services:
         value: admin
       - key: ADMIN_PASSWORD
         value: password # OR generateValue: true
+      - key: LOG_DATE_TIME
+        value: 1
+      - key: LISTEN_ADDR
+        value: 0.0.0.0:8080
 
 databases:
   - name: miniflux-db
