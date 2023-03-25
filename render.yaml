@@ -12,6 +12,8 @@ services:
         fromDatabase:
           name: miniflux-db
           property: connectionString
+      - key: RUN_MIGRATIONS
+        value: 1
       - key: CREATE_ADMIN
         value: 1
       - key: ADMIN_USERNAME
