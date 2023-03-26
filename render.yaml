@@ -21,8 +21,8 @@ services:
         value: admin
       - key: ADMIN_PASSWORD
         generateValue: true
-      # - key: LISTEN_ADDR
-      #   value: 0.0.0.0:8080
+      - key: LISTEN_ADDR
+        value: 0.0.0.0:10000
 
 databases:
   - name: miniflux-db-free
