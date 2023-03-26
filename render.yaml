@@ -1,6 +1,7 @@
 services:
   - type: web
     name: miniflux
+    plan: free
     env: docker
     repo: https://github.com/askedrelic/miniflux-render.git
     region: oregon
@@ -26,5 +27,6 @@ services:
 databases:
   - name: miniflux-db
     databaseName: miniflux
+    plan: free
     user: miniflux
     ipAllowList: []
