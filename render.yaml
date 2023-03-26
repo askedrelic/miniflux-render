@@ -4,7 +4,6 @@ services:
     env: docker
     repo: https://github.com/askedrelic/miniflux-render.git
     region: oregon
-    plan: free
     branch: main
     numInstances: 1
     # https://miniflux.app/docs/configuration.html
@@ -28,7 +27,6 @@ services:
 
 databases:
   - name: miniflux-db
-    plan: free
     databaseName: miniflux
     user: miniflux
     ipAllowList: []
