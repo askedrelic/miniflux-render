@@ -19,11 +19,9 @@ services:
       - key: ADMIN_USERNAME
         value: admin
       - key: ADMIN_PASSWORD
-      - key: LOG_DATE_TIME
-        value: 1
-      - key: LISTEN_ADDR
-        value: 0.0.0.0:8080
         generateValue: true
+      # - key: LISTEN_ADDR
+      #   value: 0.0.0.0:8080
 
 databases:
   - name: miniflux-db
