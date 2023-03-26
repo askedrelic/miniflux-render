@@ -25,7 +25,7 @@ services:
       #   value: 0.0.0.0:8080
 
 databases:
-  - name: miniflux-db
+  - name: miniflux-db-free
     databaseName: miniflux
     plan: free
     user: miniflux
