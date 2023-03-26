@@ -19,11 +19,11 @@ services:
       - key: ADMIN_USERNAME
         value: admin
       - key: ADMIN_PASSWORD
-        value: password # OR generateValue: true
       - key: LOG_DATE_TIME
         value: 1
       - key: LISTEN_ADDR
         value: 0.0.0.0:8080
+        generateValue: true
 
 databases:
   - name: miniflux-db
