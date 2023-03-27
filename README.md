@@ -4,6 +4,8 @@ This repository allows you to deploy the latest <a href="https://miniflux.app/" 
 
 *Miniflux is a minimalist and opinionated feed reader.*
 
+<img src="https://miniflux.app/images/overview.png">
+
 ## Automatic Deploy
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/askedrelic/miniflux-render)
 
